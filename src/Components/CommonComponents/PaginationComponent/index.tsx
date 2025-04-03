@@ -39,3 +39,63 @@ export const Pagination = ({ totalPages, currentPage, setCurrentPage }) => {
     </div>
   );
 };
+
+
+
+
+// import React from "react";
+
+// export const Pagination = ({ currentPage, setCurrentPage, totalPages }) => {
+//   const buttonStyle = {
+//     backgroundColor: "#007bff",
+//     color: "white",
+//     border: "none",
+//     padding: "8px 15px",
+//     borderRadius: "5px",
+//     cursor: "pointer",
+//     fontSize: "16px",
+//     margin: "0 5px",
+//   };
+
+//   const disabledStyle = {
+//     backgroundColor: "#ccc",
+//     cursor: "not-allowed",
+//   };
+
+//   const containerStyle = {
+//     display: "flex",
+//     justifyContent: "center",
+//     alignItems: "center",
+//     gap: "10px",
+//     margin: "20px 0",
+//   };
+
+//   const pageInfoStyle = {
+//     fontSize: "16px",
+//     fontWeight: "bold",
+//   };
+
+//   return (
+//     <div style={containerStyle}>
+//       <button
+//         style={currentPage === 1 ? { ...buttonStyle, ...disabledStyle } : buttonStyle}
+//         onClick={() => setCurrentPage(currentPage - 1)}
+//         disabled={currentPage === 1}
+//       >
+//         Prev
+//       </button>
+//       <span style={pageInfoStyle}>
+//         Page {currentPage} of {totalPages}
+//       </span>
+//       <button
+//         style={currentPage === totalPages ? { ...buttonStyle, ...disabledStyle } : buttonStyle}
+//         onClick={() => setCurrentPage(currentPage + 1)}
+//         disabled={currentPage === totalPages}
+//       >
+//         Next
+//       </button>
+//     </div>
+//   );
+// };
+
+
