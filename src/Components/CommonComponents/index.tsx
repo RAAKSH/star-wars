@@ -3,6 +3,7 @@ import { Pagination } from "./PaginationComponent";
 import { useState } from "react";
 import { TodoNotes } from "./Todo";
 import { OTP } from "./OTP";
+import { NumberCounter } from "./Counter";
 
 export const CommonComponents = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -28,6 +29,7 @@ export const CommonComponents = () => {
         />
         <TodoNotes />
         <OTP digits={4}/>
+        <NumberCounter />
       </div>
     </div>
   );
