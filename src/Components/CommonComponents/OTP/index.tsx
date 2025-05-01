@@ -17,7 +17,7 @@ export const OTP = ({ digits }) => {
     }
   };
   return (
-    <div>
+    <div className="mt-10">
       {otp?.map((_, index) => (
         <input
           key={index}

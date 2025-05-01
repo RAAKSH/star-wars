@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 
 export const TodoNotes = () => {
   const [addTodo, setAddTodo] = useState({ id: null, text: "" });
@@ -36,7 +36,7 @@ export const TodoNotes = () => {
   };
 
   return (
-    <div className="p-2 mt-3">
+    <div className="p-2 mt-10">
       <div className="flex">
         <input
           className="p-2 m-1 px-4 py-3 border border-gray-300 rounded "

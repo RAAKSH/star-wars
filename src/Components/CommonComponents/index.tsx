@@ -5,6 +5,9 @@ import { TodoNotes } from "./Todo";
 import { OTP } from "./OTP";
 import { NumberCounter } from "./Counter";
 import { MultiDropDown } from "./MultiDropdown";
+import { UserData } from "./ListwithPagination";
+import { InfiniteScroll } from "./InfiniteScroll";
+import { LikeButton } from "./LikeButton";
 
 export const CommonComponents = () => {
 const [currentPage, setCurrentPage] = useState(1);
@@ -29,9 +32,11 @@ const [currentPage, setCurrentPage] = useState(1);
           totalPages={5}
         />
         <TodoNotes />
+        <LikeButton />
         <OTP digits={4}/>
-        <NumberCounter />
         <MultiDropDown />
+        {/* <UserData /> */}
+        <InfiniteScroll />
       </div>
     </div>
   );

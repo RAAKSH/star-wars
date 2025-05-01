@@ -1,7 +1,7 @@
 export const Pagination = ({ totalPages, currentPage, setCurrentPage }) => {
   return (
     <div>
-      <div className="text-2xl">Pagination Component</div>
+      <div className="text-2xl m-10">Pagination Component</div>
       <div className="flex justify-center space-x-2 mt-2">
         <button
           className={`px-3 py-2 rounded-xl ${

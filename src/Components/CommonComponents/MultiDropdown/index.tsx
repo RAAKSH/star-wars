@@ -22,7 +22,7 @@ export const MultiDropDown = () => {
     ? series?.filter((item) => item?.season === Number(selectedSeason))
     : [];
 
-  //console.log("====",filteredEpisodes);
+
 
   const episodeDetails = selectedEpisode
     ? series.find((ep) => ep.id === Number(selectedEpisode))
@@ -31,7 +31,7 @@ export const MultiDropDown = () => {
   console.log("====", episodeDetails);
 
   return (
-    <div className="my-2 py-5">
+    <div className="mt-10 py-5">
       Select Season :{" "}
       <select
         className="w-100 border-2"
