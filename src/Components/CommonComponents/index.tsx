@@ -3,7 +3,6 @@ import { Pagination } from "./PaginationComponent";
 import { useState } from "react";
 import { TodoNotes } from "./Todo";
 import { OTP } from "./OTP";
-import { NumberCounter } from "./Counter";
 import { MultiDropDown } from "./MultiDropdown";
 import { UserData } from "./ListwithPagination";
 import { InfiniteScroll } from "./InfiniteScroll";
