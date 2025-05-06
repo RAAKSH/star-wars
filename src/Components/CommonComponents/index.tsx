@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { Pagination } from "./PaginationComponent";
 import { useState } from "react";
 import { TodoNotes } from "./Todo";
@@ -7,6 +7,7 @@ import { MultiDropDown } from "./MultiDropdown";
 import { UserData } from "./ListwithPagination";
 import { InfiniteScroll } from "./InfiniteScroll";
 import { LikeButton } from "./LikeButton";
+import { Form } from "./FormExample";
 
 export const CommonComponents = () => {
 const [currentPage, setCurrentPage] = useState(1);
@@ -36,6 +37,7 @@ const [currentPage, setCurrentPage] = useState(1);
         <MultiDropDown />
         {/* <UserData /> */}
         <InfiniteScroll />
+        <Form />
       </div>
     </div>
   );

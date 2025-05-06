@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
+
 export const Practice = () => {
   const navigate = useNavigate();
   const handleBack = () => {
@@ -15,6 +16,7 @@ export const Practice = () => {
           Back
         </button>
       </div>
+    
     </div>
   );
 };
