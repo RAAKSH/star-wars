@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { Task } from "./Task";
 
 
 export const Practice = () => {
@@ -16,7 +17,7 @@ export const Practice = () => {
           Back
         </button>
       </div>
-    
+    <Task />
     </div>
   );
 };
