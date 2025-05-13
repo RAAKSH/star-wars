@@ -17,7 +17,7 @@ export const Practice = () => {
           Back
         </button>
       </div>
-    <Task />
+   
     </div>
   );
 };

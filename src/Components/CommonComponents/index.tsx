@@ -8,6 +8,7 @@ import { UserData } from "./ListwithPagination";
 import { InfiniteScroll } from "./InfiniteScroll";
 import { LikeButton } from "./LikeButton";
 import { Form } from "./FormExample";
+import { UserList } from "./UserListSearch";
 
 export const CommonComponents = () => {
 const [currentPage, setCurrentPage] = useState(1);
@@ -35,9 +36,10 @@ const [currentPage, setCurrentPage] = useState(1);
         <LikeButton />
         <OTP digits={4}/>
         <MultiDropDown />
-        {/* <UserData /> */}
+        <UserData />
         <InfiniteScroll />
         <Form />
+        <UserList />
       </div>
     </div>
   );
