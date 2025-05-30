@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export const UserList = () => {
   const [searchText, setSearchText] = useState("");
@@ -19,6 +19,7 @@ export const UserList = () => {
   useEffect(() => {
     fetchData();
   }, []);
+
   const handleChange = (e) => {
     const text = e.target.value;
 

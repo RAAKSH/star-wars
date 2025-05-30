@@ -17,6 +17,7 @@ export const Practice = () => {
           Back
         </button>
       </div>
+      
    
     </div>
   );

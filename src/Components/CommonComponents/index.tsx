@@ -9,6 +9,8 @@ import { InfiniteScroll } from "./InfiniteScroll";
 import { LikeButton } from "./LikeButton";
 import { Form } from "./FormExample";
 import { UserList } from "./UserListSearch";
+import { Accordian } from "./Accordian";
+import ChipsInput from "./ChipsInput";
 
 export const CommonComponents = () => {
 const [currentPage, setCurrentPage] = useState(1);
@@ -32,7 +34,7 @@ const [currentPage, setCurrentPage] = useState(1);
           setCurrentPage={setCurrentPage}
           totalPages={5}
         />
-        <TodoNotes />
+        {/* <TodoNotes />
         <LikeButton />
         <OTP digits={4}/>
         <MultiDropDown />
@@ -40,6 +42,8 @@ const [currentPage, setCurrentPage] = useState(1);
         <InfiniteScroll />
         <Form />
         <UserList />
+        <Accordian /> */}
+        <ChipsInput />
       </div>
     </div>
   );
