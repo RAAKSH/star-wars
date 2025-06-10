@@ -11,6 +11,8 @@ import { Form } from "./FormExample";
 import { UserList } from "./UserListSearch";
 import { Accordian } from "./Accordian";
 import ChipsInput from "./ChipsInput";
+import ClassComponent from "./ClassComponent";
+import ErrorBoundary from "./ErrorBoundary";
 
 export const CommonComponents = () => {
 const [currentPage, setCurrentPage] = useState(1);
@@ -29,11 +31,11 @@ const [currentPage, setCurrentPage] = useState(1);
         </button>
       </div>
       <div className="flex flex-col justify-start items-start m-3 px-0">
-        <Pagination
+        {/* <Pagination
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}
           totalPages={5}
-        />
+        /> */}
         {/* <TodoNotes />
         <LikeButton />
         <OTP digits={4}/>
@@ -43,7 +45,12 @@ const [currentPage, setCurrentPage] = useState(1);
         <Form />
         <UserList />
         <Accordian /> */}
-        <ChipsInput />
+        {/* <ChipsInput /> */}
+
+
+        {/* <ClassComponent /> */}
+
+        <ErrorBoundary />
       </div>
     </div>
   );
