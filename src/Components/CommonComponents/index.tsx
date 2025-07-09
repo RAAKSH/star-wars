@@ -13,9 +13,11 @@ import { Accordian } from "./Accordian";
 import ChipsInput from "./ChipsInput";
 import ClassComponent from "./ClassComponent";
 import ErrorBoundary from "./ErrorBoundary";
+import { ProgressBarComponent } from "./ProgressBar/ProgressBarComponent";
+import { Tabs } from "./Tabs";
 
 export const CommonComponents = () => {
-const [currentPage, setCurrentPage] = useState(1);
+// const [currentPage, setCurrentPage] = useState(1);
   const navigate = useNavigate();
   const handleBack = () => {
     navigate(-1);
@@ -50,7 +52,11 @@ const [currentPage, setCurrentPage] = useState(1);
 
         {/* <ClassComponent /> */}
 
-        <ErrorBoundary />
+        {/* <ProgressBarComponent /> */}
+
+        {/* <ErrorBoundary /> */}
+
+        <Tabs />
       </div>
     </div>
   );
