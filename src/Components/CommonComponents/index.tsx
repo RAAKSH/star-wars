@@ -15,6 +15,7 @@ import ClassComponent from "./ClassComponent";
 import ErrorBoundary from "./ErrorBoundary";
 import { ProgressBarComponent } from "./ProgressBar/ProgressBarComponent";
 import { Tabs } from "./Tabs";
+import { StarRating } from "./StarRating";
 
 export const CommonComponents = () => {
 // const [currentPage, setCurrentPage] = useState(1);
@@ -56,7 +57,8 @@ export const CommonComponents = () => {
 
         {/* <ErrorBoundary /> */}
 
-        <Tabs />
+        {/* <Tabs /> */}
+        <StarRating  MaxStar={10} initalRating={2}/>
       </div>
     </div>
   );
