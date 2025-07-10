@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export const UserList = () => {
   const [list, setList] = useState([]);
   const [search, setSearch] = useState("");
   const [originalList, setOriginalList] = useState([]);
+  const debounceTimer=useRef(null)
 
   const fetchData = async (search: string) => {
     if (search?.length > 0) {
@@ -26,29 +27,7 @@ export const UserList = () => {
     fetchData(search);
   }, []);
 
-  const debounce = (fn, delay) => {
-    let timer;
-    if (timer) {
-      clearTimeout(timer);
-    } else {
-        console.log("asdasdasd", search);
-      timer = setTimeout(() => {
-        if (search.trim() !== "") {
-            console.log("sasdasd",search.trim());
-            
-            const filteredList = originalList?.filter((item) =>
-                item?.username.toLowerCase().includes(search?.toLowerCase())
-              );
-             
-    
-              setList(filteredList);
-        } else{
-        setList(originalList)
 
-        }
-      }, delay);
-    }
-  };
 
   const handleChange = (e) => {
     const changedValue = e.target.value;
@@ -57,7 +36,29 @@ export const UserList = () => {
 
     setSearch(changedValue);
 
-    debounce(fetchData, 3000);
+    
+    if (debounceTimer.current) {
+      clearTimeout(debounceTimer.current);
+    } 
+      console.log("asdasdasd", search);
+      debounceTimer.current = setTimeout(() => {
+        if (changedValue.trim() === "") {
+            setList(originalList);
+         
+        } else {
+            console.log("sasdasd", changedValue.trim());
+
+            const filteredList = originalList?.filter((item) =>
+              item?.username.toLowerCase().includes(changedValue?.trim().toLowerCase())
+            );
+  
+            setList(filteredList);
+         
+        }
+      }, 3000);
+    
+
+    //debounce(fetchData, 3000);
   };
 
   return (
