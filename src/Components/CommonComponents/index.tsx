@@ -16,6 +16,7 @@ import ErrorBoundary from "./ErrorBoundary";
 import { ProgressBarComponent } from "./ProgressBar/ProgressBarComponent";
 import { Tabs } from "./Tabs";
 import { StarRating } from "./StarRating";
+import { NavBar } from "./NavBar";
 
 export const CommonComponents = () => {
 // const [currentPage, setCurrentPage] = useState(1);
@@ -25,7 +26,7 @@ export const CommonComponents = () => {
   };
   return (
     <div>
-      <div className="flex justify-start p-4">
+      <div>
         <button
           className="bg-blue-500 text-white font-semibold p-2 rounded-xl"
           onClick={handleBack}
@@ -33,7 +34,7 @@ export const CommonComponents = () => {
           Back
         </button>
       </div>
-      <div className="flex flex-col justify-start items-start m-3 px-0">
+      <div>
         {/* <Pagination
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}
@@ -58,7 +59,8 @@ export const CommonComponents = () => {
         {/* <ErrorBoundary /> */}
 
         {/* <Tabs /> */}
-        <StarRating  MaxStar={10} initalRating={2}/>
+        {/* <StarRating  MaxStar={10} initalRating={2}/> */}
+        <NavBar />
       </div>
     </div>
   );
