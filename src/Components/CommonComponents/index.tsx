@@ -17,6 +17,7 @@ import { ProgressBarComponent } from "./ProgressBar/ProgressBarComponent";
 import { Tabs } from "./Tabs";
 import { StarRating } from "./StarRating";
 import { NavBar } from "./NavBar";
+import { Giphy } from "./Giphy";
 
 export const CommonComponents = () => {
 // const [currentPage, setCurrentPage] = useState(1);
@@ -60,7 +61,8 @@ export const CommonComponents = () => {
 
         {/* <Tabs /> */}
         {/* <StarRating  MaxStar={10} initalRating={2}/> */}
-        <NavBar />
+        {/* <NavBar /> */}
+        <Giphy />
       </div>
     </div>
   );
