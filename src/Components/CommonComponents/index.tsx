@@ -63,7 +63,7 @@ export const CommonComponents = () => {
         {/* <StarRating  MaxStar={10} initalRating={2}/> */}
         {/* <NavBar /> */}
         {/* <Giphy /> */}
-        <TodoNotes />
+      
       </div>
     </div>
   );
