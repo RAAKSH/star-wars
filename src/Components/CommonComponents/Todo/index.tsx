@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 
 export const TodoNotes = () => {
   const [addTodo, setAddTodo] = useState({ id: null, text: "" });
@@ -58,7 +58,7 @@ export const TodoNotes = () => {
         </button>
       </div>
       <div>
-        {list?.map((item) => (
+        {/* {list?.map((item) => (
           <div key={item?.id} className="flex p-1 justify-between">
             <h1 className="p-1">{item?.id}</h1>
             <h1 className="p-1"> {item?.text}</h1>
@@ -75,7 +75,49 @@ export const TodoNotes = () => {
               Update
             </button>
           </div>
-        ))}
+        ))} */}
+        <table className="table-auto w-full border border-gray-300">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Text</th>
+              <th>Update</th>
+              <th>Deelete</th>
+            </tr>
+          </thead>
+          <tbody>
+            {list?.map((item) => (
+              <tr key={item.id} className="m-20">
+                <td>
+                  {" "}
+                  <h1 className="p-1">{item?.id}</h1>
+                </td>
+                <td>
+                  {" "}
+                  <h1 className="p-1"> {item?.text}</h1>
+                </td>
+                <td>
+                  {" "}
+                  <button
+                    className="pt-1 px-2 py-1 bg-gray-400 rounded-xl"
+                    onClick={() => handleDelete(item)}
+                  >
+                    Delete
+                  </button>{" "}
+                </td>
+                <td>
+                  {" "}
+                  <button
+                    className="pt-1  px-2 py-1 bg-gray-400 rounded-xl"
+                    onClick={() => handleUpdate(item)}
+                  >
+                    Update
+                  </button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );

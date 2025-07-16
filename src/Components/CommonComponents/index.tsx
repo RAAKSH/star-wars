@@ -62,7 +62,8 @@ export const CommonComponents = () => {
         {/* <Tabs /> */}
         {/* <StarRating  MaxStar={10} initalRating={2}/> */}
         {/* <NavBar /> */}
-        <Giphy />
+        {/* <Giphy /> */}
+        <TodoNotes />
       </div>
     </div>
   );
