@@ -1,8 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import { Task } from "./Task";
-import { UserList } from "./Users";
+
 import Navbar from "./NavBar";
 
+import {UserList} from "../CommonComponents/UserList"
 
 export const Practice = () => {
   const navigate = useNavigate();
@@ -12,18 +13,14 @@ export const Practice = () => {
   return (
     <div>
       <div className="flex justify-start p-4">
-        <button
+        {/* <button
           className="bg-blue-500 text-white font-semibold p-2 rounded-xl"
           onClick={handleBack}
         >
           Back
-        </button>
-
-      
+        </button> */}
+        <UserList />
       </div>
-    
-      
-   
     </div>
   );
 };
